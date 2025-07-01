@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasil Kompresi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="main-container d-flex justify-content-center align-items-center vh-100 text-white">
+    <div class="glass-card p-4 rounded shadow-lg text-center">
+      <h2 class="mb-4">File berhasil diproses!</h2>
+      <p class="mb-3">Klik tombol di bawah untuk mengunduh hasil kompresi atau hasil steganografi Anda.</p>
+      <a href="/download/{{ filename }}" class="btn btn-navy w-100 mb-3">Unduh File</a>
+      <a href="/" class="btn btn-outline-light w-100">Kembali ke Beranda</a>
+    </div>
+  </div>
+</body>
+</html>
