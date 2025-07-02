@@ -2,3 +2,4 @@ Flask
 gunicorn
 stegano
 ffmpeg-python
+opencv-python-headless
